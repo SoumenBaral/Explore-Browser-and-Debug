@@ -42,3 +42,22 @@ document.getElementById("s_message").addEventListener("click",function(){
 const reset = ()=>{
     localStorage.clear();
 }
+
+const send =()=>{
+    const InName = GetValues('Id_name');
+    const InEmail =  GetValues('Id_email');
+    const InMessage = GetValues('Id_message');
+    const saveDetail = localStorage.getItem("Details");
+let Details = {};
+if(saveDetail){
+    Details = JSON.parse(saveDetail);
+}
+
+Details['Name ' ] =InName;
+Details['Email ' ] =InEmail;
+Details['Message ' ] =InMessage;
+
+
+const DetailsStringify = JSON.stringify(Details);
+localStorage.setItem('Details', DetailsStringify);
+}
