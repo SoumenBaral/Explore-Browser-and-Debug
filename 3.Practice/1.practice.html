@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Add200()">Add 200</button>
+    <button onclick="loc()">Watch Location</button>
+    <h2>Differences between Session storage and Local Storage is Given Bellow</h2>
+    <h4>Session storage and local storage are two web storage options available in modern web browsers. While they serve similar purposes, there are key differences between the two:</h4>
+    <section style="margin-bottom: 10px; margin-top: 20px;"> 
+        <h3>Scope:</h3>
+    <ul>
+        <li><span style="font-size: large;">Session Storage :</span> Session storage is specific to a particular browsing session or tab.  It remains available as long as the session is active.  If the user closes the tab or the browser, the session storage is cleared.</li>
+        <li><span style="font-size: large;">Local Storage  :</span> Local storage persists beyond a single browsing session. The data stored in local storage remains available even if the user closes the tab or the browser and can be accessed in subsequent sessions.</li>
+        
+    </ul>
+
+    <h3>Storage Limit:</h3>
+    <ul>
+        <li><span style="font-size: large;">Session Storage :</span> The amount of data that can be stored in session storage is typically limited to a few megabytes per domain. Different browsers may have varying limits.</li>
+        <li><span style="font-size: large;">Local Storage  :</span> Local storage allows for larger storage capacity, typically ranging from a few to several megabytes per domain. Again, the exact limit may differ between browsers.</li>
+        
+    </ul>
+
+    <h3>Accessibility :</h3>
+    <ul>
+        <li><span style="font-size: large;">Session Storage :</span>  The data stored in session storage is only accessible within the same browsing session or tab. If a user opens a new tab or window, the session storage is not shared and cannot be accessed.</li>
+        <li><span style="font-size: large;">Local Storage  :</span>Data stored in local storage is accessible across multiple tabs or windows of the same browser. It allows for sharing data within a domain across different instances of the browser.</li>
+        
+    </ul>
+
+    <h3>Persistence :</h3>
+    <ul>
+        <li><span style="font-size: large;">Session Storage :</span> Session storage is temporary and lasts only for the duration of a browsing session. Once the session ends (e.g., the user closes the tab or the browser), the session storage is cleared automatically.</li>
+        <li><span style="font-size: large;">Local Storage  :</span>Local Storage: Local storage is persistent and remains stored on the user's device even after closing the browser. It can be accessed and used in subsequent browsing sessions.</li>
+        
+    </ul>
+
+    <h3>Usage :</h3>
+    <ul>
+        <li><span style="font-size: large;">Session Storage :</span>Session storage is commonly used to store temporary data or data that is only required for the duration of a session, such as shopping cart contents, form data, or temporary user preferences.</li>
+        <li><span style="font-size: large;">Local Storage  :</span>Local storage is often used for long-term data storage, such as user preferences, cached data, or user-generated content that needs to persist across multiple sessions.</li>
+        
+    </ul>
+
+    </section>
+    
+
+    <script src="1.alert_Prompt_confirm.js"></script>
+</body>
+</html>
